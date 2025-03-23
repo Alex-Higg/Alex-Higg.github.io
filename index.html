@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <button id="darkModeToggle" aria-label="Toggle dark mode">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path class="sun" d="M12 3v1m0 16v1m-9-9H2m18 0h1M5.6 5.6l.7.7m12.1-.7l-.7.7m-12.1 12.1l.7-.7m12.1.7l-.7-.7M12 12a3 3 0 110-6 3 3 0 010 6z" />
+                    <path class="moon" d="M12 3a9 9 0 019 9 9 9 0 01-9 9 9 9 0 01-9-9 9 9 0 019-9z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm a passionate [your profession] with expertise in [your key skills]. I specialize in creating [what you create] and solving problems through [your approach].</p>
+                    <p>Currently, I'm [your current role/status]. I'm always eager to learn new technologies and methodologies to improve my craft.</p>
+                </div>
+                <div class="about-image">
+                    <!-- Replace with your image -->
+                    <div class="placeholder-img">Your Photo</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>Project Name</h3>
+                    <p>A brief description of the project and what technologies were used. This explains the problem solved and approach taken.</p>
+                    <pre><code class="language-javascript">
+// Sample code snippet
+function calculateSomething(data) {
+  return data.map(item => item.value * 2)
+    .filter(value => value > 10);
+}
+                    </code></pre>
+                    <div class="project-links">
+                        <a href="#" class="button">View Project</a>
+                        <a href="#" class="button button-secondary">GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Another Project</h3>
+                    <p>A brief description of this project showcasing different skills and technologies.</p>
+                    <pre><code class="language-python">
+# Python example
+def process_data(items):
+    results = []
+    for item in items:
+        if item.status == 'active':
+            results.append(item.transform())
+    return results
+                    </code></pre>
+                    <div class="project-links">
+                        <a href="#" class="button">View Project</a>
+                        <a href="#" class="button button-secondary">GitHub</a>
+                    </div>
+                </article>
+                
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+
+        <section id="articles" class="container">
+            <h2>Articles</h2>
+            <div class="articles-list">
+                <article class="article-card">
+                    <h3>Article Title</h3>
+                    <div class="article-meta">Published on <time datetime="2025-01-15">January 15, 2025</time></div>
+                    <p>A brief summary of what this article covers and why it might be interesting to readers.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+
+                <article class="article-card">
+                    <h3>Another Article Title</h3>
+                    <div class="article-meta">Published on <time datetime="2024-12-10">December 10, 2024</time></div>
+                    <p>A brief summary of what this article covers and why it might be interesting to readers.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+                
+                <!-- Add more article cards as needed -->
+            </div>
+        </section>
+
+        <section id="skills" class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul class="skills-list">
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>HTML/CSS</li>
+                        <li>SQL</li>
+                        <!-- Add more skills -->
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Frameworks & Tools</h3>
+                    <ul class="skills-list">
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Git</li>
+                        <li>Docker</li>
+                        <!-- Add more skills -->
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Other Skills</h3>
+                    <ul class="skills-list">
+                        <li>UI/UX Design</li>
+                        <li>Agile Methodologies</li>
+                        <li>Technical Writing</li>
+                        <li>Team Leadership</li>
+                        <!-- Add more skills -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out if you'd like to collaborate or have any questions.</p>
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com" class="contact-link">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M3 8l7.5 6L18 8M3 6h18v12H3V6z" />
+                    </svg>
+                    your.email@example.com
+                </a>
+                <a href="https://github.com/yourusername" class="contact-link">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z" />
+                    </svg>
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/yourusername" class="contact-link">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM9 17H6.5v-7H9v7zM7.75 9.25a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zM18 17h-2.5v-4c0-1.5-1-1.75-1.5-1.75s-1.5.5-1.5 1.25V17h-2.5v-7h2.5v1.25c.5-.75 1.5-1.25 2.5-1.25s3 .5 3 3.5v3.5z" />
+                    </svg>
+                    LinkedIn
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
