@@ -38,83 +38,50 @@
     <main>
         <section class="container">
             <h2>Projects</h2>
-            <p class="page-intro">Here's a collection of my recent work and projects I've been involved with.</p>
-            
-            <div class="projects-grid">
+            <p class="page-intro">A selection of technical and academic projects I've worked on, spanning optimisation, physics, and software development.</p>
+
+            <div class="projects-list">
                 <article class="project-card">
-                    <h3>Project Name</h3>
-                    <p>A brief description of the project and what technologies were used. This explains the problem solved and approach taken.</p>
-                    <pre><code class="language-javascript">
-// Sample code snippet
-function calculateSomething(data) {
-  return data.map(item => item.value * 2)
-    .filter(value => value > 10);
-}
-                    </code></pre>
-                    <div class="project-links">
-                        <a href="#" class="button">View Project</a>
-                        <a href="#" class="button button-secondary">GitHub</a>
-                    </div>
+                    <h3>Fusion Costing Tools – CATF International Workgroup (2025)</h3>
+                    <p>Open-source tools for estimating the cost of fusion energy systems, developed collaboratively by an international team to support transparent planning and design.</p>
+                    <ul>
+                        <li><a href="https://github.com/Woodruff-Scientific-Ltd/PyFECONS" target="_blank">PyFECONS on GitHub</a></li>
+                        <li><a href="https://github.com/Woodruff-Scientific-Ltd/PyFECONs-GoogleColab" target="_blank">Colab Version</a></li>
+                    </ul>
                 </article>
 
                 <article class="project-card">
-                    <h3>Another Project</h3>
-                    <p>A brief description of this project showcasing different skills and technologies.</p>
-                    <pre><code class="language-python">
-# Python example
-def process_data(items):
-    results = []
-    for item in items:
-        if item.status == 'active':
-            results.append(item.transform())
-    return results
-                    </code></pre>
-                    <div class="project-links">
-                        <a href="#" class="button">View Project</a>
-                        <a href="#" class="button button-secondary">GitHub</a>
-                    </div>
+                    <h3>Economic Optimisation of Fusion Reactor Actuation Using Simulated Annealing (2025)</h3>
+                    <p>Developed a 1D radial plasma model for tokamaks, using simulated annealing to optimise Neutral Beam Injection and Electron Cyclotron Heating under a fixed budget, improving energy confinement time and cost-efficiency.</p>
+                    <a href="Papers/Mathematical_Optimisation (5).pdf" target="_blank">Read Full Report (PDF)</a>
                 </article>
-                
+
                 <article class="project-card">
-                    <h3>Third Project</h3>
-                    <p>A brief description of another project showcasing your diverse skills.</p>
-                    <pre><code class="language-html">
-<!-- HTML example -->
-<section class="hero">
-  <div class="container">
-    <h1>Project Title</h1>
-    <p>Project description with details</p>
-    <button class="cta">Learn More</button>
-  </div>
-</section>
-                    </code></pre>
-                    <div class="project-links">
-                        <a href="#" class="button">View Project</a>
-                        <a href="#" class="button button-secondary">GitHub</a>
-                    </div>
+                    <h3>Power Supply Network Optimization (January 2025)</h3>
+                    <p>Developed a Python module to optimise power supply networks between power sources and sinks, modelling connections between power plants and cities as a network, with edges denoting electricity transmission routes.</p>
+                    <ul>
+                        <li><a href="https://github.com/Detriatis/hackthon_project" target="_blank">GitHub Repository</a></li>
+                    </ul>
                 </article>
-                
+
                 <article class="project-card">
-                    <h3>Fourth Project</h3>
-                    <p>A brief description of another project showcasing your diverse skills.</p>
-                    <pre><code class="language-sql">
--- SQL example
-SELECT 
-  users.name,
-  COUNT(orders.id) as order_count,
-  SUM(orders.total) as total_spent
-FROM users
-JOIN orders ON users.id = orders.user_id
-WHERE orders.status = 'completed'
-GROUP BY users.id
-HAVING COUNT(orders.id) > 5
-ORDER BY total_spent DESC
-LIMIT 10;
-                    </code></pre>
-                    <div class="project-links">
-                        <a href="#" class="button">View Project</a>
-                        <a href="#" class="button button-secondary">GitHub</a>
-                    </div>
+                    <h3>Ant Colony Optimization Algorithm (January 2025)</h3>
+                    <p>Implemented an Ant Colony Optimization algorithm to solve the Traveling Salesman Problem, demonstrating the application of bio-inspired algorithms to complex optimisation challenges.</p>
+                    <ul>
+                        <li><a href="https://github.com/JacobCummins/Ants" target="_blank">GitHub Repository</a></li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <h3>Cooling to Zero – Design and Testing of an ADR Cryostat (2023)</h3>
+                    <p>Designed and constructed a low-cost adiabatic demagnetisation refrigerator (ADR), reaching temperatures below 0.5 K. The project compared lead and niobium superconducting heat switches and proposed design improvements based on thermal modelling.</p>
+                    <a href="Papers/A_Higginbottom_Cooling_to_Zero.pdf" target="_blank">Read Full Report (PDF)</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Challenges in Quantum Field Theory: Infinities, Renormalisation, and the Path Forward (2023)</h3>
+                    <p>An essay exploring the foundational problems in QFT, including ultraviolet divergences and the limitations of the Lagrangian formalism, with discussion on axiomatic and algebraic alternatives.</p>
+                    <a href="Papers/A_Higginbottom_Foundations_Essay.pdf" target="_blank">Read Essay (PDF)</a>
                 </article>
             </div>
         </section>
