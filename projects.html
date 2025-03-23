@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Your Name</title>
+    <title>Projects - Alex Higginbottom</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="js/main.js" defer></script>
+    <style>
+        .project-card {
+            margin-bottom: 3rem;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Your Name</h1>
+            <h1>Alex Higginbottom</h1>
             <button id="darkModeToggle" aria-label="Toggle dark mode">
                 <svg viewBox="0 0 24 24" width="24" height="24">
                     <path class="sun" d="M12 3v1m0 16v1m-9-9H2m18 0h1M5.6 5.6l.7.7m12.1-.7l-.7.7m-12.1 12.1l.7-.7m12.1.7l-.7-.7M12 12a3 3 0 110-6 3 3 0 010 6z" />
@@ -29,17 +34,37 @@
                 <li><a href="index.html">About</a></li>
                 <li><a href="projects.html" class="active">Projects</a></li>
                 <li><a href="articles.html">Articles</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
+        <section id="featured" class="container" style="margin-bottom: 4rem;">
+            <h2>Featured Work</h2>
+            <div class="featured-grid">
+                <article class="featured-item">
+                    <h3>Fusion Costing Tools – CATF Workgroup</h3>
+                    <p>Open-source Python tools for modelling fusion energy system costs, developed as part of an international collaboration led by CATF.</p>
+                    <a href="https://github.com/Woodruff-Scientific-Ltd/PyFECONS" target="_blank" class="button">View on GitHub</a>
+                </article>
+
+                <article class="featured-item">
+                    <h3>Fusion Optimisation with Simulated Annealing</h3>
+                    <p>A final-year university project using simulated annealing to optimise plasma heating scenarios in fusion reactors under budget constraints.</p>
+                    <a href="Papers/Mathematical_Optimisation (5).pdf" target="_blank" class="button">Read Full Report</a>
+                </article>
+
+                <article class="featured-item">
+                    <h3>Power Supply Network Optimisation</h3>
+                    <p>Python-based optimisation of electricity distribution from generation to urban nodes, developed during a hackathon in January 2025.</p>
+                    <a href="https://github.com/Detriatis/hackthon_project" target="_blank" class="button">Explore Code</a>
+                </article>
+            </div>
+        </section>
+
         <section class="container">
             <h2>Projects</h2>
-            <p class="page-intro">A selection of technical and academic projects I've worked on, spanning optimisation, physics, and software development.</p>
-
             <div class="projects-list">
                 <article class="project-card">
                     <h3>Fusion Costing Tools – CATF International Workgroup (2025)</h3>
